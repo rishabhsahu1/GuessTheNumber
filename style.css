@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  color: #eee;
+  background-color: #222;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px white solid;
+}
+main {
+  height: 60vh;
+}
+.btn {
+  border: none;
+  background-color: #eee;
+  color: #222;
+  font-size: 3rem;
+  font-family: "Times New Roman", Times, serif;
+  margin: 2rem 2rem;
+  cursor: pointer;
+  width: 15rem;
+  height: 5rem;
+}
+.btn:hover {
+  background-color: #ccc;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2rem;
+}
+
+.number {
+  background: #eee;
+  color: #333;
+  font-size: 6rem;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.guess {
+  background: none;
+  border: 0.4rem solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 30rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  font-size: 5rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 2rem;
+}
+
+.right-display {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  word-spacing: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.last {
+  margin-bottom: 2rem;
+  height: 3rem;
+  font-size: 4rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media (max-width: 34em) {
+  #heading {
+    font-size: 3rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+    width: 8rem;
+    height: 2rem;
+  }
+  .number {
+    font-size: 3rem;
+    width: 10rem;
+    height: 5rem;
+  }
+  main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .guess {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 17rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 0.3rem solid #eee;
+  }
+
+  .message {
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .right-display {
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    word-spacing: 1.5rem;
+    text-align: center;
+  }
+
+  .last {
+    margin-bottom: 1rem;
+    height: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
